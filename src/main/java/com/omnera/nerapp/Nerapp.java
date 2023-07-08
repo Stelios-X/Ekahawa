@@ -21,7 +21,14 @@ public class Nerapp {
         System.out.println("The Omnera\tCorporation of\tKenya");
         */
     
-    Masomo amasomo = new Masomo(67);
-    
+        //Masomo amasomo = new Masomo(67);
+        /*int[] arr = {1,4,11,2,54,7};
+        Apple myApple = new Apple();
+        myApple.find_sum_array(arr, 9);
+        */
+        
+        Pluto mypluto = new Pluto();
+        mypluto.SwitchDemo();   
+        
     }
 }
