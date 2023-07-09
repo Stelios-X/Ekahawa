@@ -27,8 +27,9 @@ public class Nerapp {
         myApple.find_sum_array(arr, 9);
         */
         
-        Pluto mypluto = new Pluto();
-        mypluto.SwitchDemo();   
+        int[] arr = {9,2,4,1};
         
+        DuplicateSearch duplicated = new DuplicateSearch();
+        duplicated.ContainsDuplicates(arr);
     }
 }
