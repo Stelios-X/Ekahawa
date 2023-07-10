@@ -4,7 +4,7 @@
  */
 package com.omnera.nerapp;
 
-import java.util.Arrays;
+import java.util.*;
 
 /**
  *
@@ -68,4 +68,49 @@ public class DuplicateSearch
         } 
     }
     
+    //Hash set method
+    //It iterates through an array chcking if a specific element exists within the arry if not, it adds it to the Hash set.
+    //If the element in question does exist in the array, it returms true. If it goes throug the entire has set and gets no hits, it returns false
+    
+    public void HashTester()
+    {
+        // This is a sidebar
+        HashSet<Integer> akrabu = new HashSet<Integer>();
+        akrabu.add(8);
+        akrabu.add(7);
+        akrabu.add(3);
+        Iterator<Integer> ret= akrabu.iterator();
+        while(ret.hasNext())
+        {
+            System.out.print("The answer is "+ret.next()+" -- "+ret.next()+" -- " +ret.next());
+        }
+        
+    }
+    
+    //Impementation of HashSet 
+    public void ContainsDup_HS(int[] nums)
+    {
+        int x = 0;
+        HashSet<Integer> numero = new HashSet<>();
+        for(int num : nums)
+        {
+           if(numero.contains(num))
+           {
+               x = 1;
+           }
+           numero.add(num);
+        } 
+        
+        if(x == 1)
+        {
+          System.out.print("+++++That's a positive on duplictes");  
+         // return true;
+        }
+       else
+        {
+          System.out.print("-----Negative on duplicates");
+          //return false;
+        }    
+    }
+        
 }

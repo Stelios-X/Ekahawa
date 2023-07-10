@@ -27,9 +27,9 @@ public class Nerapp {
         myApple.find_sum_array(arr, 9);
         */
         
-        int[] arr = {9,2,4,1};
+        int[] arr = {8,2,4,1};
         
         DuplicateSearch duplicated = new DuplicateSearch();
-        duplicated.ContainsDuplicates(arr);
+        duplicated.ContainsDup_HS(arr);
     }
 }
