@@ -112,5 +112,35 @@ public class DuplicateSearch
           //return false;
         }    
     }
+    
+    //HashMap implementation
+    public boolean HashMapper(int[] nums)
+    {
+        int x = 0;
+        HashMap<Integer, Integer> themap = new HashMap<>();
+        
+        for(int num : nums)
+        {
+            if(themap.containsKey(num) && themap.get(num)>=1)
+            {
+              x = 1;   
+            }
+         themap.put(num, themap.getOrDefault(num, 0) +1);    
+        }
+       
+        if(x == 1)
+        {
+            //System.out.println("++++++Duplicates are present!");
+            return true;
+        }
+       else
+        {
+            //System.out.println("-----Duplicates are ABSENT!");
+            return false;
+        }
+        
+    }
+    
+    
         
 }
